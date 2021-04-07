@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" >
+ 
+    <title> CW Party</title>
+    
+    <!-- CSS區 -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet"> 
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS / bootstrap.min.css -->
+          <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- tips：為了讓網頁的 HTML 與 CSS 順利載入後才使用 JS 做效果，
+        JS 相關的引用可以放在整個網頁的結尾，也就是 </body> 的標籤前方。 -->
+        <!-- JS/ jquery先放 3.6.0 指的是版本(會改) / 另外兩條不限順序/ -->
+          <script src="js/jquery-3.6.0.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/popper.min.js"></script>
+        
+    
+</head>
+
+<body>
+  <header>
+      <div class="container">
+        <!-- 刪除bg-light -->
+        <nav class="navbar navbar-expand-lg navbar-light"> 
+         <!-- 可以改成自己的logo -->
+          <a class="navbar-brand" href="#">
+            <!-- 用CSS調整寬度 -->
+            <img src="logo-img.png">
+
+          </a>
+          <!-- toggler 是mobile type的時候才會出現 -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">首頁</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">課程大綱</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">常見問題</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">聯絡我們</a>
+              </li> 
+
+
+            </ul>
+            <!--右手邊的選項沒有用到可以刪除
+               <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+          </div>
+        </nav>    
+        
+      </div>
+  </header>
+
+    <section id="intro">
+        <div class="jumbotron"> 
+            <div class="container">
+              <div class="row">         
+                    <div class="col-md-12">
+                        <h1>最有趣的課程 </h1>
+                        <p class="lead">~SO EASY!SO HAPPY~</p>
+                        <a class="btn" href="https://getbootstrap.com/docs/4.3/layout/grid/" target="_blank">加入課程</a>
+                        <a class="btn" href="https://getbootstrap.com/docs/3.4/components/" target="_blank" >更多資訊</a>
+                  </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="second">
+        <div class="container">
+          <div class="row">
+            <!-- 只拿中間8格，旁邊個設定2格，字對齊中央 -->
+            <div class="col-md-8 offest-md-2 text-center">
+              <h3> 最新消息 NEWS </h3>
+              <!-- 8格下再弄一個row,一樣會分成12格 -->
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="bt.png">
+                  <h6>bootstrap 開課中... </h6>
+                </div>
+                <div class="col-md-8 text-left">
+                  <p> 
+                    Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+    </section>
+    
+
+   <section id="third">
+     <div class="container">
+       <div class="row">
+        <div class="col-md-12 text-center">
+          <h3> 上課實況 </h3>
+        </div>
+
+        <div class="col-md-4">
+         <div class="outer">
+           <div class="upper">
+            <img src="S1.jpg">
+            
+
+           </div>
+
+           <div class="lower">
+             
+           </div>
+
+         </div>
+
+        </div>
+
+        <div class="col-md-4">
+          test2
+
+        </div>
+
+        <div class="col-md-4">
+          test3
+
+        </div>
+
+       </div>
+
+
+     </div>
+     
+
+   </section>
+
+</body>
+</html>

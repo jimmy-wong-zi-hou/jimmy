@@ -1,0 +1,106 @@
+h1,h2,h3,h4,h5,h6{
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+p,a,textarea,input,label,li,ul{
+
+    font-family: 'Open Sans ', sans-serif;
+
+}
+
+.btn{
+    /* 整個網站的按鍵都是同樣的規格 */
+    background-color: rgb(15, 110, 110);
+    color: aliceblue;
+    padding: 10px, 20px;
+    border-radius: 15px;
+}
+
+/* for second h3 */
+h3{
+
+    line-height:1.5;
+    font-size: 36px;
+
+}
+
+p{
+    color:#707070;
+}
+
+/* 中間沒有空格表示要同時為p 又是lead 同時滿足，兩個都是class就寫成 .class1.class2*/
+p.lead{
+    color:brown;
+}
+
+#intro .jumbotron{
+
+/* 指定改intro裡面的jumbotron 避免改到其他的 jumbotron區塊*/
+/* 因為jumbotron是類別，所以要用.jumbotron, 但和into 中間要記得有空格 */
+    height: 70vh;
+    margin-bottom:0px ;
+
+}
+
+
+#intro h1{
+    /* 指定改intro裡面的h1 因為h1是標籤不是class,所以不用.*/
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.5;
+
+}
+
+#intro .container{
+    
+    position: relative;/* 相對的 */
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 1000px;
+}
+
+/* 主選單的logo image，因為只有一張 */
+header nav img{
+
+    width: 170px;
+    margin-right: 50px;
+}
+
+header li{
+    margin:0px 20px;
+
+}
+
+/* 第二段往下移一點，不適合加marginu 因為版面應該是連在一起的 */
+#second{
+
+    padding: 80px;
+
+}
+
+#second h3{
+    margin-bottom: 80px;
+}
+
+/* 因為second 裡面只有一張照片 所以可以這樣寫 */
+#second img{
+
+    margin-bottom: 13px;
+    border-radius: 100%;
+    width: 120px;
+
+}
+
+#third{
+
+    padding:80px 0px;
+    background-color: rgb(248,248,248);
+}
+
+#third h3{
+    margin-bottom:80px;
+
+}
+
